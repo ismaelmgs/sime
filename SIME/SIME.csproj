@@ -144,6 +144,7 @@
   <ItemGroup>
     <Content Include="Views\frmConsultaCliente.aspx" />
     <Content Include="Views\frmConsultaProveedor.aspx" />
+    <Content Include="Views\frmOrdenes.aspx" />
     <Content Include="Views\frmRegistoClientes.aspx" />
     <Content Include="Views\frmRegistroProveedor.aspx" />
     <Content Include="Web.config">
@@ -241,6 +242,13 @@
     </Compile>
     <Compile Include="Views\frmConsultaProveedor.aspx.designer.cs">
       <DependentUpon>frmConsultaProveedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmOrdenes.aspx.cs">
+      <DependentUpon>frmOrdenes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmOrdenes.aspx.designer.cs">
+      <DependentUpon>frmOrdenes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\frmRegistoClientes.aspx.cs">
       <DependentUpon>frmRegistoClientes.aspx</DependentUpon>
