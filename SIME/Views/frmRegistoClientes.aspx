@@ -15,7 +15,7 @@
                 <uc1:ucMensaje runat="server" ID="ucMensaje" />
 
                 <div style="margin-left: 2%;">
-                    <h5 class="page-title rlrH5" style="margin-left: -2%;margin-bottom: 1%;font-weight:bold;">Registro de Clientes</h5>
+                    <h5 class="page-title rlrH5" style="margin-left: -2%;margin-bottom: 1%;font-weight:bold;">.:Registro de Clientes:.</h5>
                 </div>
 
 
