@@ -12,7 +12,7 @@
             <ContentTemplate>
 
                 <div style="margin-left: 2%;">
-                    <h5 class="page-title rlrH5" style="margin-left: -2%;margin-bottom: 1%;font-weight:bold;">Listado de Clientes</h5>
+                    <h5 class="page-title rlrH5" style="margin-left: -2%;margin-bottom: 1%;font-weight:bold;">Listado de Clientes DE SIME</h5>
                 </div>
 
                 <div class="row">
