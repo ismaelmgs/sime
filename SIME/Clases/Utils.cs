@@ -43,5 +43,41 @@ namespace SIME.Clases
                 return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).sNombre;
             }
         }
+
+        /// <summary>
+        /// Obtiene el email del usuario en session
+        /// </summary>
+        public static string GetMailUsuario
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session["UserIdentity"] == null)
+                {
+                    UserIdentity oUsuario = new UserIdentity();
+                    oUsuario.sCorreoE = "(correo@mail)";
+                    System.Web.HttpContext.Current.Session["UserIdentity"] = oUsuario;
+                }
+
+                return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).sCorreoE;
+            }
+        }
+
+        /// <summary>
+        /// Obtiene el perfil del usuario en session
+        /// </summary>
+        public static int GetPerfilUsuario
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session["UserIdentity"] == null)
+                {
+                    UserIdentity oUsuario = new UserIdentity();
+                    oUsuario.iPerfil = 0;
+                    System.Web.HttpContext.Current.Session["UserIdentity"] = oUsuario;
+                }
+
+                return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).iPerfil;
+            }
+        }
     }
 }

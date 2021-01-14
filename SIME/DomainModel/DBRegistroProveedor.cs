@@ -34,7 +34,6 @@ namespace SIME.DomainModel
                                                 , "@Identificacion", oRegistro.Identificacion
                                                 , "@Id_Status", oRegistro.Id_Status
                                                 , "@Usuario_Registro", oRegistro.Usuario_Registro
-                                                , "@Fecha_Registro", oRegistro.Fecha_Registro
                                                 , "@Contacto_Servicios", oRegistro.Contacto_Servicios
                                                 , "@Tel_Cont_serv", oRegistro.Tel_Cont_serv
                                                 , "@Mail_Cont_serv", oRegistro.Mail_Cont_serv

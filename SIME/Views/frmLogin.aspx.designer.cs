@@ -7,21 +7,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace SIME
+namespace SIME.Views
 {
 
 
-	public partial class Site
+	public partial class frmLogin
 	{
-
-		/// <summary>
-		/// head control.
-		/// </summary>
-		/// <remarks>
-		/// Auto-generated field.
-		/// To modify move field declaration from designer file to code-behind file.
-		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
 
 		/// <summary>
 		/// form1 control.
@@ -33,39 +24,57 @@ namespace SIME
 		protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
 		/// <summary>
-		/// HeaderTitle control.
+		/// ScriptManger control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::SIME.HeaderTitle HeaderTitle;
+		protected global::System.Web.UI.ScriptManager ScriptManger;
 
 		/// <summary>
-		/// MenuUsuarios control.
+		/// upaGeneral control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.Menu MenuUsuarios;
+		protected global::System.Web.UI.UpdatePanel upaGeneral;
 
 		/// <summary>
-		/// Header control.
+		/// ucMensaje control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::SIME.Header Header;
+		protected global::SIME.ControlesUsuario.ucMensaje ucMensaje;
 
 		/// <summary>
-		/// mainContent control.
+		/// txtsUsuario control.
 		/// </summary>
 		/// <remarks>
 		/// Auto-generated field.
 		/// To modify move field declaration from designer file to code-behind file.
 		/// </remarks>
-		protected global::System.Web.UI.WebControls.ContentPlaceHolder mainContent;
+		protected global::System.Web.UI.WebControls.TextBox txtsUsuario;
+
+		/// <summary>
+		/// txtPass control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.TextBox txtPass;
+
+		/// <summary>
+		/// btnLogin control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::System.Web.UI.WebControls.Button btnLogin;
 	}
 }
