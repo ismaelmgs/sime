@@ -42,6 +42,15 @@ namespace SIME
 		protected global::SIME.HeaderTitle HeaderTitle;
 
 		/// <summary>
+		/// Navigation control.
+		/// </summary>
+		/// <remarks>
+		/// Auto-generated field.
+		/// To modify move field declaration from designer file to code-behind file.
+		/// </remarks>
+		protected global::SIME.Navigation Navigation;
+
+		/// <summary>
 		/// MenuUsuarios control.
 		/// </summary>
 		/// <remarks>

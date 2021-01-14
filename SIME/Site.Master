@@ -41,22 +41,22 @@
         <div class="demo-header-separator shadow" style="width:100%"></div>
         <div class="d-flex h-100">
             <div class="d-none d-lg-flex flex-shrink-0 flex-column demo-side-nav">
-                <div class="h-100 overflow-hidden demo-area-highlight">
-                    <demo:HeaderTitle runat="server" id="HeaderTitle" />
+				<div class="h-100 overflow-hidden demo-area-highlight">
+					<demo:HeaderTitle runat="server" ID="HeaderTitle" />
 
-                    <%--<demo:Navigation runat="server" id="Navigation" />--%>
+					<demo:Navigation runat="server" ID="Navigation" />
 
-                    <nav
 
-                    <asp:Menu ID="MenuUsuarios" runat="server" Orientation="Vertical" StaticEnableDefaultPopOutImage="false" CssClass="nav flex-column">
-                    <StaticMenuItemStyle Height="54px" />
-                    <LevelMenuItemStyles>
-                        <asp:MenuItemStyle CssClass="waves-effect waves-dark nav-item nav-link levelStatic" ForeColor="#3d5170" />
-                    </LevelMenuItemStyles>
-                    <LevelSubMenuStyles></LevelSubMenuStyles>
-                </asp:Menu>
 
-                </div>
+					<asp:Menu ID="MenuUsuarios" runat="server" Orientation="Vertical" StaticEnableDefaultPopOutImage="false" CssClass="nav flex-column">
+						<StaticMenuItemStyle Height="54px" />
+						<LevelMenuItemStyles>
+							<asp:MenuItemStyle CssClass="waves-effect waves-dark nav-item nav-link levelStatic" ForeColor="#3d5170" />
+						</LevelMenuItemStyles>
+						<LevelSubMenuStyles></LevelSubMenuStyles>
+					</asp:Menu>
+
+				</div>
             </div>
 
             <div class="d-flex flex-fill flex-column demo-content">

@@ -12,7 +12,7 @@ namespace SIME.DomainModel
         {
             try
             {
-                return oDB_SP.EjecutarDT("[sp_Consulta_Proveedores]", "@Buscar", Buscar);
+                return oDB_SP.EjecutarDT("sp_Consulta_Provedores", "@Buscar", Buscar);
             }
             catch (Exception ex)
             {
