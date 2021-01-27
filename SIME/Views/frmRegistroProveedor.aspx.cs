@@ -20,8 +20,8 @@ namespace SIME.Views
 
             if (!IsPostBack)
             {
-                chkFisica.Checked = true;
-                chkMoral.Checked = false;
+                rdnFisica.Checked = true;
+                rdnMoral.Checked = false;
                 IdTipoPersona = 1;
                 divMoral.Visible = false;
                 divFisica.Visible = true;
@@ -30,8 +30,8 @@ namespace SIME.Views
 
         protected void chkFisica_CheckedChanged(object sender, EventArgs e)
         {
-            chkFisica.Checked = true;
-            chkMoral.Checked = false;
+            rdnFisica.Checked = true;
+            rdnMoral.Checked = false;
             IdTipoPersona = 1;
             divMoral.Visible = false;
             divFisica.Visible = true;
@@ -39,8 +39,8 @@ namespace SIME.Views
 
         protected void chkMoral_CheckedChanged(object sender, EventArgs e)
         {
-            chkFisica.Checked = false;
-            chkMoral.Checked = true;
+            rdnFisica.Checked = false;
+            rdnMoral.Checked = true;
             IdTipoPersona = 2;
             divMoral.Visible = true;
             divFisica.Visible = false;
@@ -126,5 +126,23 @@ namespace SIME.Views
         }
 
         #endregion
+
+        protected void rdnFisica_CheckedChanged(object sender, EventArgs e)
+        {
+            rdnFisica.Checked = true;
+            rdnMoral.Checked = false;
+            IdTipoPersona = 1;
+            divMoral.Visible = false;
+            divFisica.Visible = true;
+        }
+
+        protected void rdnMoral_CheckedChanged(object sender, EventArgs e)
+        {
+            rdnFisica.Checked = false;
+            rdnMoral.Checked = true;
+            IdTipoPersona = 2;
+            divMoral.Visible = true;
+            divFisica.Visible = false;
+        }
     }
 }

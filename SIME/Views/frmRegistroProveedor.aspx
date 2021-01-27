@@ -19,15 +19,17 @@
                 </div>
 
 
-                <div class="row">
+               <div class="row">
                     <div class="col-md-3 rlrcentro" style="text-align: right; margin-bottom: 5px; padding-top: 3px;">
                         <asp:Label runat="server" Text="Tipo de Persona:"></asp:Label>       
                     </div>
                     <div class="col-md-4 rlrcentro" style="text-align: center; margin-bottom: 5px;">
-                         <asp:CheckBox ID="chkFisica" runat="server" Text="Fisica" OnCheckedChanged="chkFisica_CheckedChanged" AutoPostBack="true" CssClass="lblTituloCampos" /> 
+                        <asp:RadioButton ID="rdnFisica" runat ="server" Text="Fisica" AutoPostBack="true" CssClass="lblTituloCampos" OnCheckedChanged="rdnFisica_CheckedChanged" />
+                         <%--<asp:CheckBox ID="chkFisica" runat="server" Text="Fisica" OnCheckedChanged="chkFisica_CheckedChanged" AutoPostBack="true" CssClass="lblTituloCampos" />--%> 
                     </div>
                     <div class="col-md-5 rlrcentro" style="text-align: center; margin-bottom: 12px;">
-                          <asp:CheckBox ID="chkMoral" runat="server" Text="Moral" OnCheckedChanged="chkMoral_CheckedChanged" AutoPostBack="true" CssClass="lblTituloCampos" /> 
+                          <asp:RadioButton ID="rdnMoral" runat ="server" Text="Fisica" AutoPostBack="true" CssClass="lblTituloCampos" OnCheckedChanged="rdnMoral_CheckedChanged" />
+                          <%--<asp:CheckBox ID="chkMoral" runat="server" Text="Moral" OnCheckedChanged="chkMoral_CheckedChanged" AutoPostBack="true" CssClass="lblTituloCampos" />--%> 
                     </div>
                 </div>
 
