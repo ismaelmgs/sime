@@ -7,6 +7,8 @@ namespace SIME.Objetos
 {
     public class Registro
     {
+        private int _iIdCliente = 0;
+        private int _iIdProveedor = 0;
         private int _Id_Tipo_Persona;
         private string _Razon_Social;
         private string _Sector;
@@ -23,7 +25,7 @@ namespace SIME.Objetos
         private string _Mpio_Del;
         private string _Ciudad;
         private string _Pais;
-        private string _Fec_Nac;
+        private DateTime _Fec_Nac;
         private string _Identificacion;
         private int _Id_Status;
         private string _Usuario_Registro;
@@ -34,6 +36,19 @@ namespace SIME.Objetos
         private string _Contacto_Administrativo;
         private string _Tel_Cont_adm;
         private string _Mail_Cont_adm;
+
+
+        public int iIdProveedor
+        {
+            get { return _iIdProveedor; }
+            set { _iIdProveedor = value; }
+        }
+
+        public int iIdCliente
+        {
+            get { return _iIdCliente; }
+            set { _iIdCliente = value; }
+        }
 
         public int Id_Tipo_Persona
         {
@@ -131,7 +146,7 @@ namespace SIME.Objetos
             set { _Pais = value; }
         }
 
-        public string Fec_Nac
+        public DateTime Fec_Nac
         {
             get { return _Fec_Nac; }
             set { _Fec_Nac = value; }

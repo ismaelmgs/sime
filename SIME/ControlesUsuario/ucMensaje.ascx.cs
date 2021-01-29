@@ -11,22 +11,22 @@ namespace SIME.ControlesUsuario
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnOk.OnClientClick = String.Format("fnClickOK('{0}','{1}')", btnOk.UniqueID, "");
+            btnOK.OnClientClick = String.Format("fnClickOK('{0}','{1}')", btnOK.UniqueID, "");
         }
-
+        
         public void ShowMessage(string Message, string Caption)
         {
             lblMessage.Text = Message;
             lblCaption.Text = Caption;
-            tdCaption.Visible = true;
-            mpext.Show();
+            ppMensaje.HeaderText = Caption;
+            ppMensaje.ShowOnPageLoad = true;
         }
 
         public void Hide()
         {
             lblMessage.Text = "";
             lblCaption.Text = "";
-            mpext.Hide();
+            ppMensaje.ShowOnPageLoad = false;
         }
 
         public void btnOk_Click(object sender, EventArgs e)
@@ -40,7 +40,7 @@ namespace SIME.ControlesUsuario
         protected virtual void OnOkButtonPressed(EventArgs e)
         {
             if (OkButtonPressed != null)
-                OkButtonPressed(btnOk, e);
+                OkButtonPressed(btnOK, e);
         }
     }
 }

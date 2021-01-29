@@ -17,7 +17,7 @@
 
         <dx:BootstrapTreeViewNode Text="Registrar" Expanded="true">
             <Nodes>
-                <dx:BootstrapTreeViewNode Text="Registo Clientes" NavigateUrl="~/Views/frmRegistoClientes.aspx"></dx:BootstrapTreeViewNode>
+                <dx:BootstrapTreeViewNode Text="Registro Clientes" NavigateUrl="~/Views/frmRegistoClientes.aspx"></dx:BootstrapTreeViewNode>
                 <dx:BootstrapTreeViewNode Text="Registro Proveedor" NavigateUrl="~/Views/frmRegistroProveedor.aspx"></dx:BootstrapTreeViewNode>
             </Nodes>
         </dx:BootstrapTreeViewNode>

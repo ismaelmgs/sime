@@ -13,24 +13,6 @@ namespace SIME.Views {
     public partial class frmRegistoClientes {
         
         /// <summary>
-        /// Control ScriptManger.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManger;
-        
-        /// <summary>
-        /// Control upaGeneral.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel upaGeneral;
-        
-        /// <summary>
         /// Control ucMensaje.
         /// </summary>
         /// <remarks>
@@ -73,7 +55,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRazon_Social;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtRazon_Social;
         
         /// <summary>
         /// Control divFisica.
@@ -85,13 +67,31 @@ namespace SIME.Views {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl divFisica;
         
         /// <summary>
+        /// Control lblPrimerNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPrimerNombre;
+        
+        /// <summary>
         /// Control txtPrimer_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrimer_Nombre;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtPrimer_Nombre;
+        
+        /// <summary>
+        /// Control lblSegundoNombre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSegundoNombre;
         
         /// <summary>
         /// Control txtSegundo_Nombre.
@@ -100,7 +100,16 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSegundo_Nombre;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtSegundo_Nombre;
+        
+        /// <summary>
+        /// Control lblApellidoPaterno.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblApellidoPaterno;
         
         /// <summary>
         /// Control txtApp_Pa.
@@ -109,7 +118,16 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApp_Pa;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtApp_Pa;
+        
+        /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
         /// Control txtApp_Mat.
@@ -118,7 +136,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtApp_Mat;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtApp_Mat;
         
         /// <summary>
         /// Control txtIdentificacion.
@@ -127,7 +145,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtIdentificacion;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtIdentificacion;
         
         /// <summary>
         /// Control txtFec_Nac.
@@ -136,7 +154,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFec_Nac;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtFec_Nac;
         
         /// <summary>
         /// Control txtRFC.
@@ -145,7 +163,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRFC;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtRFC;
         
         /// <summary>
         /// Control txtSector.
@@ -154,7 +172,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSector;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtSector;
         
         /// <summary>
         /// Control txtCalle.
@@ -163,7 +181,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCalle;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtCalle;
         
         /// <summary>
         /// Control txtNum_Ext.
@@ -172,7 +190,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNum_Ext;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtNum_Ext;
         
         /// <summary>
         /// Control txtNum_Int.
@@ -181,7 +199,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNum_Int;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtNum_Int;
         
         /// <summary>
         /// Control txtCP.
@@ -190,7 +208,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCP;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtCP;
         
         /// <summary>
         /// Control txtColonia.
@@ -199,7 +217,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtColonia;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtColonia;
         
         /// <summary>
         /// Control txtMpio_Del.
@@ -208,7 +226,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMpio_Del;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtMpio_Del;
         
         /// <summary>
         /// Control txtCiudad.
@@ -217,7 +235,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtCiudad;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtCiudad;
         
         /// <summary>
         /// Control txtPais.
@@ -226,7 +244,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPais;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtPais;
         
         /// <summary>
         /// Control txtContacto_Servicios.
@@ -235,25 +253,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContacto_Servicios;
-        
-        /// <summary>
-        /// Control txtTel_Cont_serv.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTel_Cont_serv;
-        
-        /// <summary>
-        /// Control txtMail_Cont_serv.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMail_Cont_serv;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtContacto_Servicios;
         
         /// <summary>
         /// Control txtContacto_Administrativo.
@@ -262,7 +262,16 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtContacto_Administrativo;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtContacto_Administrativo;
+        
+        /// <summary>
+        /// Control txtTel_Cont_serv.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtTel_Cont_serv;
         
         /// <summary>
         /// Control txtTel_Cont_adm.
@@ -271,7 +280,16 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTel_Cont_adm;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtTel_Cont_adm;
+        
+        /// <summary>
+        /// Control txtMail_Cont_serv.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtMail_Cont_serv;
         
         /// <summary>
         /// Control txtMail_Cont_adm.
@@ -280,7 +298,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMail_Cont_adm;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtMail_Cont_adm;
         
         /// <summary>
         /// Control btnRegistrar.

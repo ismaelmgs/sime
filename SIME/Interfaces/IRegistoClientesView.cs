@@ -10,8 +10,9 @@ namespace SIME.Interfaces
     public interface IRegistoClientesView : IBaseView
     {
         Registro oRegistro { set; get; }
+        int iIdCliente { set; get; }
 
-        void MostrarMensaje(DataTable dt);
+        void MostrarMensaje(string sMensaje, string sTitulo);
 
         event EventHandler eInsertaClientes;
     }

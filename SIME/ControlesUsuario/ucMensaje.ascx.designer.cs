@@ -13,31 +13,13 @@ namespace SIME.ControlesUsuario {
     public partial class ucMensaje {
         
         /// <summary>
-        /// Control mpext.
+        /// Control ppMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AjaxControlToolkit.ModalPopupExtender mpext;
-        
-        /// <summary>
-        /// Control pnlPopup.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel pnlPopup;
-        
-        /// <summary>
-        /// Control tdCaption.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTableCell tdCaption;
+        protected global::DevExpress.Web.Bootstrap.BootstrapPopupControl ppMensaje;
         
         /// <summary>
         /// Control lblCaption.
@@ -67,12 +49,12 @@ namespace SIME.ControlesUsuario {
         protected global::System.Web.UI.WebControls.Label lblMessage;
         
         /// <summary>
-        /// Control btnOk.
+        /// Control btnOK.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnOk;
+        protected global::System.Web.UI.WebControls.Button btnOK;
     }
 }

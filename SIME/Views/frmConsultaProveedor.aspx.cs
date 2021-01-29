@@ -8,6 +8,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NucleoBase.Core;
+using SIME.Clases;
 
 namespace SIME.Views
 {
@@ -17,19 +19,40 @@ namespace SIME.Views
         {
             oPresenter = new ConsultaProveedorPresenter(this, new DBConsultaProveedor());
 
+            if (eSearchProveedores != null)
+                eSearchProveedores(sender, e);
+
             if (!IsPostBack)
             {
                 sBusctar = string.Empty;
-                if (eSearchProveedores != null)
-                    eSearchProveedores(sender, e);
             }
         }
 
         protected void btnBucar_Click(object sender, EventArgs e)
         {
-            sBusctar = txtBuscar.Text;
-            if (eSearchProveedores != null)
-                eSearchProveedores(sender, e);
+            //sBusctar = txtBuscar.Text;
+            //if (eSearchProveedores != null)
+            //    eSearchProveedores(sender, e);
+        }
+
+        protected void gvProveedores_RowCommand(object sender, DevExpress.Web.ASPxGridViewRowCommandEventArgs e)
+        {
+            string sOpcion = ((DevExpress.Web.ASPxButton)e.CommandSource).CommandName.S();
+            iIdProveedor = e.CommandArgs.CommandArgument.S().I();
+
+            object cellValues = gvProveedores.GetRowValuesByKeyValue(iIdProveedor, "Proveedor" //0
+                                                                                , "Descripcion" //1
+                                                                                , "RFC" //2
+                                                                                , "Contacto_Serv" //3
+                                                                                , "Contacto_Admin" //4
+                                                                                , "Sector" //5
+            );
+
+            if (sOpcion == "Proveedor")
+            {
+                string sCli = Utils.EncodeStrToBase64(iIdProveedor.S());
+                Response.Redirect("frmRegistroProveedor.aspx?IdPro=" + sCli);
+            }
         }
 
         #region MÉTODOS
@@ -61,6 +84,12 @@ namespace SIME.Views
 
         public event EventHandler eSearchProveedores;
 
+        public int iIdProveedor
+        {
+            set { ViewState["VSiIdProveedor"] = value; }
+            get { return (int)ViewState["VSiIdProveedor"]; }
+        }
+
         public string sBusctar
         {
             set { ViewState["VSsBusctar"] = value; }
@@ -68,5 +97,7 @@ namespace SIME.Views
         }
 
         #endregion
+
+        
     }
 }

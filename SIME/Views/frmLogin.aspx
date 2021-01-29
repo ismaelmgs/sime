@@ -7,49 +7,51 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link href="../SwitcherResources/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-
-            <asp:ScriptManager ID="ScriptManger" runat="Server" />
-
-            <div style="width: 100%;">
-                <asp:UpdatePanel ID="upaGeneral" runat="server">
-                    <ContentTemplate>
-
-                        <uc1:ucMensaje runat="server" ID="ucMensaje" />
-
-                        <div style="margin-left: 2%;">
-                            <h5 class="page-title rlrH5" style="margin-left: -2%; margin-bottom: 1%; font-weight: bold;">Login</h5>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 rlrcentro" style="text-align: right; margin-bottom: 5px; padding-top: 3px;">
-                                <asp:Label runat="server" Text="Usuario:"></asp:Label>
-                            </div>
-                            <div class="col-md-6 rlrcentro" style="text-align: center; margin-bottom: 5px;">
-                                <asp:TextBox ID="txtsUsuario" runat="server" Text=""></asp:TextBox>
-                            </div>
-                        </div>
-
-                         <div class="row">
-                            <div class="col-md-6 rlrcentro" style="text-align: right; margin-bottom: 5px; padding-top: 3px;">
-                                <asp:Label runat="server" Text="Contraseña:"></asp:Label>
-                            </div>
-                            <div class="col-md-6 rlrcentro" style="text-align: center; margin-bottom: 5px;">
-                                <asp:TextBox ID="txtPass"  runat="server" Text="" type="password" ></asp:TextBox>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <asp:Button ID="btnLogin" runat="server" Text="Iniciar Secion" CssClass="btn btn-primary" OnClick="btnLogin_Click" />
-                        </div>
-
-                    </ContentTemplate>
-                </asp:UpdatePanel>
+        <uc1:ucMensaje runat="server" ID="ucMensaje" />
+        <br />
+        <br />
+        <br />
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align:center">
+                <dx:BootstrapTextBox ID="txtUsuario" runat="server" Caption="Usuario:" NullText="Ingrese su email aquí.">
+                    <ValidationSettings RequiredField-IsRequired="true" RequiredField-ErrorText="El usuario es requerido"></ValidationSettings>
+                </dx:BootstrapTextBox>
             </div>
-
+            <div class="col-md-4"></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align:center">
+                <dx:BootstrapTextBox ID="txtPassword" runat="server" Caption="Contraseña:" NullText="Ingrese su contraseña aquí." Password="true">
+                    <ValidationSettings RequiredField-IsRequired="true" RequiredField-ErrorText="La contraseña es requerida"></ValidationSettings>
+                </dx:BootstrapTextBox>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align:center">
+                <dx:BootstrapButton ID="btnEntrar" runat="server" Text="Ingresar" OnClick="btnLogin_Click">
+                    <SettingsBootstrap RenderOption="Primary" />
+                </dx:BootstrapButton>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align:center">
+                <dx:BootstrapButton ID="btnOlvidoPass" runat="server" Text="¿Olvidó su contraseña?">
+                    <SettingsBootstrap RenderOption="Link" />
+                </dx:BootstrapButton>
+            </div>
+            <div class="col-md-4"></div>
         </div>
     </form>
 </body>

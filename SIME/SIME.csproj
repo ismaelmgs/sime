@@ -106,6 +106,7 @@
     <Content Include="ControlesUsuario\ucMensaje.ascx" />
     <Content Include="frmDefault.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\icons\information.png" />
     <Content Include="Views\frmLogin.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.min.js" />

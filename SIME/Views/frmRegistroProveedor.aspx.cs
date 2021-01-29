@@ -9,6 +9,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using NucleoBase.Core;
+using SIME.Clases;
 
 namespace SIME.Views
 {
@@ -25,6 +27,16 @@ namespace SIME.Views
                 IdTipoPersona = 1;
                 divMoral.Visible = false;
                 divFisica.Visible = true;
+
+                iIdProveedor = 0;
+                if (Request.QueryString["IdPro"] != null)
+                {
+                    string sIdProv = Request.QueryString["IdPro"].S();
+                    iIdProveedor = Utils.DecodeBase64ToString(sIdProv).S().I();
+
+                    if (eObjSelected != null)
+                        eObjSelected(sender, e);
+                }
             }
         }
 
@@ -48,17 +60,25 @@ namespace SIME.Views
 
         protected void btnRegistrar_Click(object sender, EventArgs e)
         {
-            if (eInsertaProveedor != null)
-                eInsertaProveedor(sender, e);
+            if (iIdProveedor == 0)
+            {
+                if (eInsertaProveedor != null)
+                    eInsertaProveedor(sender, e);
+            }
+            else
+            {
+                if (eSaveObj != null)
+                    eSaveObj(sender, e);
+            }
         }
 
         #region MÉTODOS
 
-        public void MostrarMensaje(DataTable dt)
+        public void MostrarMensaje(string sMensaje, string sTitulo)
         {
             try
             {
-                ucMensaje.ShowMessage(dt.Rows[0][1].ToString(), "¡Informacion!");
+                ucMensaje.ShowMessage(sMensaje, sTitulo);
             }
             catch (Exception ex)
             {
@@ -80,6 +100,12 @@ namespace SIME.Views
 
         public event EventHandler eInsertaProveedor;
 
+        public int iIdProveedor
+        {
+            set { ViewState["VSiIdProveedor"] = value; }
+            get { return (int)ViewState["VSiIdProveedor"]; }
+        }
+
         public int IdTipoPersona
         {
             set { ViewState["VSResponsable"] = value; }
@@ -92,6 +118,7 @@ namespace SIME.Views
             {
                 return new Registro
                 {
+                    iIdProveedor = iIdProveedor,
                     Id_Tipo_Persona = IdTipoPersona,
                     Razon_Social = txtRazon_Social.Text,
                     Sector = txtSector.Text,
@@ -108,7 +135,7 @@ namespace SIME.Views
                     Mpio_Del = txtMpio_Del.Text,
                     Ciudad = txtCiudad.Text,
                     Pais = txtPais.Text,
-                    Fec_Nac = txtFec_Nac.Text,
+                    Fec_Nac = txtFec_Nac.Value.S().Dt(),
                     Identificacion = txtIdentificacion.Text,
                     Id_Status = 1,
                     Usuario_Registro = "System",
@@ -122,7 +149,46 @@ namespace SIME.Views
                 };
             }
             set
-            { }
+            {
+                Registro oReg = value;
+                if (oReg.Id_Tipo_Persona == 1)
+                {
+                    chkFisica.Checked = true;
+                    chkMoral.Checked = false;
+
+                    chkFisica_CheckedChanged(null, EventArgs.Empty);
+                }
+                else
+                {
+                    chkFisica.Checked = false;
+                    chkMoral.Checked = true;
+                    chkMoral_CheckedChanged(null, EventArgs.Empty);
+                }
+                
+                txtRazon_Social.Text = oReg.Razon_Social;
+                txtSector.Text = oReg.Sector;
+                txtPrimer_Nombre.Text = oReg.Primer_Nombre;
+                txtSegundo_Nombre.Text = oReg.Segundo_Nombre;
+                txtApp_Pa.Text = oReg.App_Pat;
+                txtApp_Mat.Text = oReg.App_Mat;
+                txtRFC.Text = oReg.RFC;
+                txtCalle.Text = oReg.Calle;
+                txtNum_Ext.Text = oReg.Num_Ext;
+                txtNum_Int.Text = oReg.Num_Int;
+                txtCP.Text = oReg.CP;
+                txtColonia.Text = oReg.Colonia;
+                txtMpio_Del.Text = oReg.Mpio_Del;
+                txtCiudad.Text = oReg.Ciudad;
+                txtPais.Text = oReg.Pais;
+                txtFec_Nac.Value = oReg.Fec_Nac.S();
+                txtIdentificacion.Text = oReg.Identificacion;
+                txtContacto_Servicios.Text = oReg.Contacto_Servicios;
+                txtTel_Cont_serv.Text = oReg.Tel_Cont_serv;
+                txtMail_Cont_serv.Text = oReg.Mail_Cont_serv;
+                txtContacto_Administrativo.Text = oReg.Contacto_Administrativo;
+                txtTel_Cont_adm.Text = oReg.Tel_Cont_adm;
+                txtMail_Cont_adm.Text = oReg.Mail_Cont_adm;
+            }
         }
 
         #endregion

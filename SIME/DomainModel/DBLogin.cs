@@ -12,7 +12,7 @@ namespace SIME.DomainModel
         {
             try
             {
-                return oDB_SP.EjecutarDT("sp_seg_Login", "@Usuario", sUsuario, "@Pass", sPass);
+                return oDB_SP.EjecutarDT("[dbo].[sp_seg_Login]", "@Usuario", sUsuario, "@Pass", sPass);
             }
             catch (Exception ex)
             {

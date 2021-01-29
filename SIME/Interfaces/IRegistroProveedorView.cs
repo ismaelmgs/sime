@@ -10,8 +10,11 @@ namespace SIME.Interfaces
     public interface IRegistroProveedorView : IBaseView
     {
         Registro oRegistro { set; get; }
+        int iIdProveedor { set; get; }
 
-        void MostrarMensaje(DataTable dt);
+
+        void MostrarMensaje(string sMensaje, string sTitulo);
+
 
         event EventHandler eInsertaProveedor;
     }

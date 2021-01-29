@@ -22,13 +22,13 @@ namespace SIME.Views
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtsUsuario.Text.S() == string.Empty)
+            if (txtUsuario.Text.S() == string.Empty)
                 ucMensaje.ShowMessage("El Usuario es requerido", "Aviso");
-            else if (txtPass.Text.S() == string.Empty)
+            else if (txtPassword.Text.S() == string.Empty)
                 ucMensaje.ShowMessage("La contraseña es requerida", "Aviso");
             {
-                sUsuario = txtsUsuario.Text;
-                sPass = txtPass.Text;
+                sUsuario = txtUsuario.Text;
+                sPass = txtPassword.Text;
 
                 if (eSearchUsuario != null)
                     eSearchUsuario(sender, e);
@@ -71,7 +71,7 @@ namespace SIME.Views
         {
             try
             {
-                ucMensaje.ShowMessage(mensaje, "¡Informacion!");
+                //ucMensaje.ShowMessage(mensaje, "¡Informacion!");
             }
             catch (Exception ex)
             {
