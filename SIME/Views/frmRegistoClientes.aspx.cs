@@ -192,6 +192,24 @@ namespace SIME.Views
             }
         }
 
-        #endregion
-    }
+		#endregion
+
+		protected void rdnFisica_CheckedChanged(object sender, EventArgs e)
+		{
+            chkFisica.Checked = true;
+            chkMoral.Checked = false;
+            IdTipoPersona = 1;
+            divMoral.Visible = false;
+            divFisica.Visible = true;
+        }
+
+		protected void rdnMoral_CheckedChanged(object sender, EventArgs e)
+		{
+            chkFisica.Checked = false;
+            chkMoral.Checked = true;
+            IdTipoPersona = 2;
+            divMoral.Visible = true;
+            divFisica.Visible = false;
+        }
+	}
 }

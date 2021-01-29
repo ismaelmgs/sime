@@ -7,8 +7,9 @@
         IconCollapseNode="demo-icon demo-icon-ex m-0"
         NodeList="demo-treeview-nodes m-0" Node="demo-treeview-node" Control="demo-treeview" />
 
-    <Nodes>        
-         <dx:BootstrapTreeViewNode Text="Consultar" Expanded="true">
+    <Nodes> 
+        
+         <dx:BootstrapTreeViewNode Text="Consultar" >
             <Nodes>
                 <dx:BootstrapTreeViewNode Text="Consulta Cliente" NavigateUrl="~/Views/frmConsultaCliente.aspx"></dx:BootstrapTreeViewNode>
                 <dx:BootstrapTreeViewNode Text="Consulta Proveedor" NavigateUrl="~/Views/frmConsultaProveedor.aspx"></dx:BootstrapTreeViewNode>
