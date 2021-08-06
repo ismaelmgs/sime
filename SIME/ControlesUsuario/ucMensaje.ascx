@@ -45,7 +45,7 @@
                 </div>
             </div>
             <footer style="text-align:right">
-                <asp:Button ID="btnOK" runat="server" AutoPostBack="false" Text="Aceptar" CssClass="btn btn btn-primary"></asp:Button>
+                <%--<asp:Button ID="btnOK" runat="server" AutoPostBack="false" Text="Aceptar" CssClass="btn btn btn-primary"></asp:Button>--%>
             </footer>
         </dx:ContentControl>
     </ContentCollection>

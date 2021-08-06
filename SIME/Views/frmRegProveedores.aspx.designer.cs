@@ -10,7 +10,16 @@
 namespace SIME.Views {
     
     
-    public partial class frmRegistoClientes {
+    public partial class frmRegProveedores {
+        
+        /// <summary>
+        /// Control form1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
         /// Control ucMensaje.
@@ -121,13 +130,13 @@ namespace SIME.Views {
         protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtApp_Pa;
         
         /// <summary>
-        /// Control Label1.
+        /// Control Label3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
         /// Control txtApp_Mat.
@@ -154,7 +163,7 @@ namespace SIME.Views {
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtFec_Nac;
+        protected global::DevExpress.Web.Bootstrap.BootstrapDateEdit txtFec_Nac;
         
         /// <summary>
         /// Control txtRFC.
@@ -256,15 +265,6 @@ namespace SIME.Views {
         protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtContacto_Servicios;
         
         /// <summary>
-        /// Control txtContacto_Administrativo.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtContacto_Administrativo;
-        
-        /// <summary>
         /// Control txtTel_Cont_serv.
         /// </summary>
         /// <remarks>
@@ -274,15 +274,6 @@ namespace SIME.Views {
         protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtTel_Cont_serv;
         
         /// <summary>
-        /// Control txtTel_Cont_adm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtTel_Cont_adm;
-        
-        /// <summary>
         /// Control txtMail_Cont_serv.
         /// </summary>
         /// <remarks>
@@ -290,6 +281,24 @@ namespace SIME.Views {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtMail_Cont_serv;
+        
+        /// <summary>
+        /// Control txtContacto_Administrativo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtContacto_Administrativo;
+        
+        /// <summary>
+        /// Control txtTel_Cont_adm.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtTel_Cont_adm;
         
         /// <summary>
         /// Control txtMail_Cont_adm.

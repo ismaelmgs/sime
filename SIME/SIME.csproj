@@ -107,6 +107,11 @@
     <Content Include="frmDefault.aspx" />
     <Content Include="Global.asax" />
     <Content Include="images\icons\information.png" />
+    <Content Include="images\logos\logo3aa.jpg" />
+    <Content Include="images\slide\electricidad.jpg" />
+    <Content Include="images\slide\plomeria.jpg" />
+    <Content Include="images\slide\remodelacion.jpg" />
+    <Content Include="Styles\StyleMIT.css" />
     <Content Include="Views\frmLogin.aspx" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -146,9 +151,13 @@
   <ItemGroup>
     <Content Include="Views\frmConsultaCliente.aspx" />
     <Content Include="Views\frmConsultaProveedor.aspx" />
+    <Content Include="Views\frmMisSolicitudes.aspx" />
     <Content Include="Views\frmOrdenes.aspx" />
+    <Content Include="Views\frmPerfil.aspx" />
+    <Content Include="Views\frmRegProveedores.aspx" />
     <Content Include="Views\frmRegistoClientes.aspx" />
     <Content Include="Views\frmRegistroProveedor.aspx" />
+    <Content Include="Views\frmSolicitudServicio.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -180,8 +189,11 @@
     <Compile Include="DomainModel\DBConsultaProveedor.cs" />
     <Compile Include="DomainModel\DBLogin.cs" />
     <Compile Include="DomainModel\DBMaster.cs" />
+    <Compile Include="DomainModel\DBMisSolicitudes.cs" />
+    <Compile Include="DomainModel\DBPerfil.cs" />
     <Compile Include="DomainModel\DBRegistroProveedor.cs" />
     <Compile Include="DomainModel\DBRegistoClientes.cs" />
+    <Compile Include="DomainModel\DBSolicitudServicio.cs" />
     <Compile Include="frmDefault.aspx.cs">
       <DependentUpon>frmDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,13 +209,22 @@
     <Compile Include="Interfaces\IConsultaProveedorView.cs" />
     <Compile Include="Interfaces\ILoginView.cs" />
     <Compile Include="Interfaces\IMasterView.cs" />
+    <Compile Include="Interfaces\IMisSolicitudes.cs" />
+    <Compile Include="Interfaces\IPerfil.cs" />
     <Compile Include="Interfaces\IRegistoClientesView.cs" />
     <Compile Include="Interfaces\IRegistroProveedorView.cs" />
+    <Compile Include="Interfaces\ISolicitudServicio.cs" />
+    <Compile Include="Objetos\Fotografia.cs" />
+    <Compile Include="Objetos\Perfil.cs" />
     <Compile Include="Objetos\Registro.cs" />
+    <Compile Include="Objetos\SolicitudServicio.cs" />
     <Compile Include="Objetos\UserIdentity.cs" />
     <Compile Include="Presenter\BasePresenter.cs" />
     <Compile Include="Presenter\ConsultaClientePresenter.cs" />
     <Compile Include="Presenter\ConsultaProveedorPresenter.cs" />
+    <Compile Include="Presenter\MisSolicitudes_Presenter.cs" />
+    <Compile Include="Presenter\Perfil_Presenter.cs" />
+    <Compile Include="Presenter\SolicitudServicio_Presenter.cs" />
     <Compile Include="Views\frmLogin.aspx.cs">
       <DependentUpon>frmLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -258,12 +279,33 @@
     <Compile Include="Views\frmConsultaProveedor.aspx.designer.cs">
       <DependentUpon>frmConsultaProveedor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmMisSolicitudes.aspx.cs">
+      <DependentUpon>frmMisSolicitudes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmMisSolicitudes.aspx.designer.cs">
+      <DependentUpon>frmMisSolicitudes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\frmOrdenes.aspx.cs">
       <DependentUpon>frmOrdenes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\frmOrdenes.aspx.designer.cs">
       <DependentUpon>frmOrdenes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmPerfil.aspx.cs">
+      <DependentUpon>frmPerfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmPerfil.aspx.designer.cs">
+      <DependentUpon>frmPerfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\frmRegProveedores.aspx.cs">
+      <DependentUpon>frmRegProveedores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmRegProveedores.aspx.designer.cs">
+      <DependentUpon>frmRegProveedores.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\frmRegistoClientes.aspx.cs">
       <DependentUpon>frmRegistoClientes.aspx</DependentUpon>
@@ -279,9 +321,17 @@
     <Compile Include="Views\frmRegistroProveedor.aspx.designer.cs">
       <DependentUpon>frmRegistroProveedor.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\frmSolicitudServicio.aspx.cs">
+      <DependentUpon>frmSolicitudServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\frmSolicitudServicio.aspx.designer.cs">
+      <DependentUpon>frmSolicitudServicio.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ImagenesSolicitud\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,7 +11,7 @@ namespace SIME.ControlesUsuario
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            btnOK.OnClientClick = String.Format("fnClickOK('{0}','{1}')", btnOK.UniqueID, "");
+            //btnOK.OnClientClick = String.Format("fnClickOK('{0}','{1}')", btnOK.UniqueID, "");
         }
         
         public void ShowMessage(string Message, string Caption)
@@ -39,8 +39,8 @@ namespace SIME.ControlesUsuario
 
         protected virtual void OnOkButtonPressed(EventArgs e)
         {
-            if (OkButtonPressed != null)
-                OkButtonPressed(btnOK, e);
+            //if (OkButtonPressed != null)
+            //    OkButtonPressed(btnOK, e);
         }
     }
 }

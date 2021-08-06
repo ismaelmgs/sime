@@ -1,6 +1,8 @@
 ﻿using SIME.Objetos;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Web;
 
@@ -8,6 +10,25 @@ namespace SIME.Clases
 {
     public static class Utils
     {
+        /// <summary>
+        /// Metodo para convertir una imagen en byte
+        /// </summary>
+        /// <param name="img">Imagen</param>
+        /// <returns></returns>
+        public static byte[] Convertir_Imagen_Bytes(Image img)
+        {
+            string sTemp = Path.GetTempFileName();
+            FileStream fs = new FileStream(sTemp, FileMode.OpenOrCreate, FileAccess.ReadWrite);
+            img.Save(fs, System.Drawing.Imaging.ImageFormat.Png);
+            fs.Position = 0;
+
+            int imgLength = Convert.ToInt32(fs.Length);
+            byte[] bytes = new byte[imgLength];
+            fs.Read(bytes, 0, imgLength);
+            fs.Close();
+            return bytes;
+        }
+        
         /// <summary>
         /// Obtiene el Id Empleado del usuario en session
         /// </summary>
@@ -77,6 +98,42 @@ namespace SIME.Clases
                 }
 
                 return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).iPerfil;
+            }
+        }
+
+        /// <summary>
+        /// Obtiene el id del usuario en el sistema para proveedores
+        /// </summary>
+        public static int GetIdProveedor
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session["UserIdentity"] == null)
+                {
+                    UserIdentity oUsuario = new UserIdentity();
+                    oUsuario.iIdSistema = 0;
+                    System.Web.HttpContext.Current.Session["UserIdentity"] = oUsuario;
+                }
+
+                return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).iIdSistema;
+            }
+        }
+
+        /// <summary>
+        /// Obtiene el nombre del perfil del usuario en session
+        /// </summary>
+        public static string GetDescPerfilUsuario
+        {
+            get
+            {
+                if (System.Web.HttpContext.Current.Session["UserIdentity"] == null)
+                {
+                    UserIdentity oUsuario = new UserIdentity();
+                    oUsuario.sDescPerfil = string.Empty;
+                    System.Web.HttpContext.Current.Session["UserIdentity"] = oUsuario;
+                }
+
+                return ((UserIdentity)System.Web.HttpContext.Current.Session["UserIdentity"]).sDescPerfil;
             }
         }
 

@@ -7,63 +7,81 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace SIME {
+namespace SIME.Views {
     
     
-    public partial class Site {
+    public partial class frmPerfil {
         
         /// <summary>
-        /// Control head.
+        /// Control ucMensaje.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+        protected global::SIME.ControlesUsuario.ucMensaje ucMensaje;
         
         /// <summary>
-        /// Control form1.
+        /// Control btnAgregarPerfil.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::DevExpress.Web.Bootstrap.BootstrapButton btnAgregarPerfil;
         
         /// <summary>
-        /// Control HeaderTitle.
+        /// Control gvPerfiles.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::SIME.HeaderTitle HeaderTitle;
+        protected global::DevExpress.Web.Bootstrap.BootstrapGridView gvPerfiles;
         
         /// <summary>
-        /// Control Navigation.
+        /// Control ppAddPerfil.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::SIME.Navigation Navigation;
+        protected global::DevExpress.Web.Bootstrap.BootstrapPopupControl ppAddPerfil;
         
         /// <summary>
-        /// Control Header.
+        /// Control txtPerfil.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::SIME.Header Header;
+        protected global::DevExpress.Web.Bootstrap.BootstrapTextBox txtPerfil;
         
         /// <summary>
-        /// Control mainContent.
+        /// Control txtComentarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder mainContent;
+        protected global::DevExpress.Web.Bootstrap.BootstrapMemo txtComentarios;
+        
+        /// <summary>
+        /// Control btnAgregar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapButton btnAgregar;
+        
+        /// <summary>
+        /// Control btnCancelar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::DevExpress.Web.Bootstrap.BootstrapButton btnCancelar;
     }
 }

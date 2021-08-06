@@ -34,7 +34,7 @@
                         <Columns>
                             <dx:BootstrapGridViewDataColumn Caption="Proveedor" VisibleIndex="1" Settings-AllowDragDrop="False" CssClasses-HeaderCell="border-1" HorizontalAlign="Left">
                             <DataItemTemplate>
-                                <dx:BootstrapButton ID="lkbCliente" runat="server" Text='<%# Eval("Proveedor").ToString() %>' CommandArgument='<%# Eval("Id_Prov") %>'  CommandName="Proveedor">
+                                <dx:BootstrapButton ID="btnEliminar" runat="server" Text="Eliminar" CommandArgument="<%# Eval("Index") %>"  CommandName="EliminarServicio">
                                     <SettingsBootstrap RenderOption="Link" />
                                 </dx:BootstrapButton>
                             </DataItemTemplate>

@@ -12,10 +12,12 @@ namespace SIME.Objetos
         private string _sCorreoE = string.Empty;
         private int _iPerfil = 0; // 1.- Usuario 
                                   // 2.- Administrador
+        private string _sDescPerfil = string.Empty;
         private string _sPass = string.Empty;
         private int _iIdEmpresa = 0;
         private string _sEmpresa = string.Empty;
         private byte[] _bLogotipo = new byte[1];
+        private int _iIdSistema = 0;
 
 
         public string sIdEmp
@@ -42,6 +44,12 @@ namespace SIME.Objetos
             set { _iPerfil = value; }
         }
 
+        public string sDescPerfil
+        {
+            get { return _sDescPerfil; }
+            set { _sDescPerfil = value; }
+        }
+        
         public int iIdEmpresa
         {
             get { return _iIdEmpresa; }
@@ -65,5 +73,12 @@ namespace SIME.Objetos
             get { return _bLogotipo; }
             set { _bLogotipo = value; }
         }
+
+        public int iIdSistema
+        {
+            get { return _iIdSistema; }
+            set { _iIdSistema = value; }
+        }
+        
     }
 }

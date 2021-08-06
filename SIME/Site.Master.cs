@@ -28,6 +28,8 @@ namespace SIME
 
                     if (eSearchMenu != null)
                         eSearchMenu(sender, e);
+
+                    Header.LoadUserDates();
                 }
             }
             catch (Exception)
@@ -48,10 +50,12 @@ namespace SIME
         {
             try
             {
-                if (dt.Rows.Count > 0)
-                {
-                     Menu(MenuUsuarios.Items, 0, dt);
-                }
+                //if (dt.Rows.Count > 0)
+                //{
+                //     Menu(MenuUsuarios.Items, 0, dt);
+                //}
+
+                Navigation.LoadMenu(dt);
             }
             catch (Exception ex)
             {

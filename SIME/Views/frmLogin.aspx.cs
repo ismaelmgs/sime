@@ -51,6 +51,8 @@ namespace SIME.Views
                     oUsuario.sCorreoE = dt.Rows[0][4].S();
                     oUsuario.iPerfil = dt.Rows[0][5].I();
                     oUsuario.sPass = sPass;
+                    oUsuario.sDescPerfil = dt.Rows[0]["Des_Perfil"].S();
+                    oUsuario.iIdSistema = dt.Rows[0]["IdSistema"].S().I();
 
                     Session["UserIdentity"] = oUsuario;
 

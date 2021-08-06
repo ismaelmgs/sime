@@ -48,13 +48,13 @@
 
 
 
-					<asp:Menu ID="MenuUsuarios" runat="server" Orientation="Vertical" StaticEnableDefaultPopOutImage="false" CssClass="nav flex-column">
+					<%--<asp:Menu ID="MenuUsuarios" runat="server" Orientation="Vertical" StaticEnableDefaultPopOutImage="false" CssClass="nav flex-column">
 						<StaticMenuItemStyle Height="54px" />
 						<LevelMenuItemStyles>
 							<asp:MenuItemStyle CssClass="waves-effect waves-dark nav-item nav-link levelStatic" ForeColor="#3d5170" />
 						</LevelMenuItemStyles>
 						<LevelSubMenuStyles></LevelSubMenuStyles>
-					</asp:Menu>
+					</asp:Menu>--%>
 
 				</div>
             </div>

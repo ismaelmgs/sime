@@ -5,6 +5,7 @@ using System.Web;
 
 namespace SIME.Objetos
 {
+    [Serializable]
     public class Registro
     {
         private int _iIdCliente = 0;
